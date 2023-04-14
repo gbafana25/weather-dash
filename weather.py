@@ -70,7 +70,7 @@ def getAlerts(cid):
 	"""
 
 def parseInput(cid):
-	if len(sys.argv) == 2:
+	if len(sys.argv) >= 2:
 		if sys.argv[1] == 'hourly':
 			getHourlyForecast(cast, int(sys.argv[2]))
 		elif sys.argv[1] == 'daily':
